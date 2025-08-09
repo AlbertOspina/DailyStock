@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,7 +34,7 @@ public class StocksQueryController {
 
     @GetMapping("/excel")
     void getStockExcel(){
-        stockExcelService.getStockList();
+        ArrayList<String> stockList = stockExcelService.getStockList();
     }
 
 }

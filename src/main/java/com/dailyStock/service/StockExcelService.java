@@ -1,6 +1,8 @@
 package com.dailyStock.service;
 
+import java.util.ArrayList;
+
 public interface StockExcelService {
 
-    public void getStockList ();
+    public ArrayList<String> getStockList ();
 }
